@@ -23,3 +23,8 @@ class Solution {
 
     }
 }
+
+//Approach:
+// Extract digits from the number, the increment it to the sum and multiple it to the product
+// To extract digits do n%10. Then for next digit first do n/10.
+// Keep repeating the digit and doing the process until n==0;
