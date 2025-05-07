@@ -33,19 +33,8 @@ class Solution {
     }
 }
 
-//
-
-// 1 2 3 4 5 3 2 1
-// --------|
-//         |------
-
-// 5 4 3 2 1
-// |
-
-// 1 2 3 4 5
-
-// 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
-// 1 2 3 4 5 6 7 8 9 8 7  6  4  2  1
-// i             |                  j
-//               i     |            j
-//               i                  j
+//Approach
+// Take the array take i = 0 & j as last index i.e. arr.length-1;
+// Traverse the array in forward direction using i till the next element is not less than element at i. i.e. till arr[i]<arr[i+1] do i++
+// Trevaers the array in backward direction using j till arr[j-1] < arr[j].
+// Return i/j as you might have reached the peak element.
