@@ -20,16 +20,7 @@ class Solution {
     }
 }
 
-
-// 4
-// 1 2
-
-// 16 
-// 1 2 3 4 
-// 21
-// 1 2 3 4 
-
-// 5*5 <=25
-// n*n <= x
-// n <= x/n
-//1  36
+// Approach
+// We have to find the square root of x
+// We take range of 1 to x, here we check for every element without any range reduction
+// While checking if we come across a state where n > x/n then we return n-1.
